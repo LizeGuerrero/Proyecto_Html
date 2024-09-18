@@ -1,0 +1,130 @@
+/* Activar desplazamiento suave */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Estilo para el botón de scroll hacia arriba */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background-color: #a19f9b; /* Color de fondo del botón */
+    border: none; /* Quitar borde */
+    border-radius: 50%; /* Hacer el botón redondeado */
+    width: 50px; /* Ancho del botón */
+    height: 50px; /* Alto del botón */
+    display: flex; /* Usar flexbox para alinear el icono */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 24px; /* Tamaño del icono */
+    color: #fff; /* Color del icono */
+}
+
+.scroll-to-top:hover {
+    background-color: #ffc368; /* Color de fondo al pasar el mouse */
+}
+
+.scroll-to-top i {
+    font-size: 24px; /* Tamaño del icono */
+}
+
+/* Mostrar el botón cuando se haga scroll */
+.show {
+    display: block;
+}
+
+/* Estilos generales */
+body {
+    background-color: #f8f9fa;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    color: #ffffff;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-family: 'Dancing Script', cursive;
+    color: #fe8800;
+    margin-bottom: 20px;
+}
+
+/* Estilo para el header */
+header {
+    background-color: #ffc060; /* Color de fondo naranja para el header */
+    padding: 0; /* Elimina el padding si lo hay, para evitar espacio extra */
+}
+
+/* Estilo para la barra de navegación dentro del header */
+.navbar {
+    background-color: #ff9900 !important; /* Color de fondo naranja para la barra de navegación */
+    position: sticky; /* Mantener la barra de navegación fija */
+    top: 0; /* Posicionar en la parte superior */
+    z-index: 1000; /* Asegura que esté sobre otros elementos */
+    padding: 0.5rem 1rem; /* Padding para ajustar el tamaño */
+}
+
+/* Estilo para el texto y enlaces en la barra de navegación */
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: #ffffff !important; /* Color blanco para el texto */
+    font-family: 'Dancing Script', cursive; /* Fuente cursiva para el texto */
+    font-size: 1.25rem; /* Tamaño de fuente para los enlaces y nombre de la marca (ajusta según tu preferencia) */
+}
+
+/* Cambiar color de los enlaces cuando se pasa el ratón */
+.navbar .nav-link:hover {
+    color: #cc6600 !important; /* Color naranja oscuro para los enlaces al pasar el ratón */
+    transition: color 0.3s ease, transform 0.3s ease; /* Transición suave */
+    transform: scale(1.05); /* Efecto de zoom pequeño al pasar el ratón */
+
+/* Efecto hover en imágenes */
+img {
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease; /* Transición suave */
+}
+
+img:hover {
+    transform: scale(1.05); /* Aumentar ligeramente el tamaño al hacer hover */
+}
+
+.gallery img {
+    width: 100%; 
+    height: auto; /* Esto mantiene la proporción de la imagen */
+    object-fit: cover; /* Asegura que la imagen se ajuste al espacio sin distorsionarse */
+    border-radius: 10px; /* Cambia el radio de bordes redondeados */
+    margin-bottom: 20px; /* Añade un margen inferior para espaciar las imágenes */
+}
+
+/* Efecto hover en botones */
+button:hover {
+    background-color: #0056b3; /* Cambiar el color de fondo en hover */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+button {
+    transition: background-color 0.3s ease;
+}
+
+/* Estilos del footer */
+footer {
+    background-color: #f1f1f1;
+    padding: 10px 0;
+    }
+}
+/* Estilo para el campo de mensaje y el texto dentro del placeholder */
+#mensaje {
+    color: #333; /* Color del texto normal */
+}
+
+/* Estilo para el placeholder del campo de mensaje */
+#mensaje::placeholder {
+    color: #888; /* Color gris del texto del placeholder */
+    opacity: 1; /* Asegura que el placeholder no sea opaco */
+}
