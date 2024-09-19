@@ -74,7 +74,7 @@ header {
 .navbar .nav-link {
     color: #ffffff !important; /* Color blanco para el texto */
     font-family: 'Dancing Script', cursive; /* Fuente cursiva para el texto */
-    font-size: 1.25rem; /* Tamaño de fuente para los enlaces y nombre de la marca (ajusta según tu preferencia) */
+    font-size: 1.25rem; /* Tamaño de fuente para los enlaces */
 }
 
 /* Cambiar color de los enlaces cuando se pasa el ratón */
